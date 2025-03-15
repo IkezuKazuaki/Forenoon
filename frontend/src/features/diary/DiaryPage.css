@@ -1,0 +1,168 @@
+/* src/features/diary/DiaryPage.css */
+
+/* Google Fonts をインポート */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* 全体のフォント設定 */
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+/* 全体のコンテナスタイル */
+.container {
+  max-width: 900px;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* タイトルのスタイル */
+h1 {
+  color: #00aaff; /* メインカラー */
+  font-family: 'Roboto', sans-serif;
+}
+
+/* タイムライン要素のタイトルスタイル */
+.diary-timeline-element .vertical-timeline-element-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: #00aaff; /* メインカラー */
+  text-align: center; /* 中央揃え */
+}
+
+/* タイムライン要素のコンテンツスタイル */
+.diary-timeline-element p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #333333; /* テキストカラー */
+  text-align: center; /* 中央揃え */
+}
+
+/* アイコンのカスタマイズ */
+.diary-timeline-element .vertical-timeline-element-icon {
+  background: #00aaff; /* メインカラー */
+  color: #ffffff;
+  box-shadow: 0 0 0 4px #e6f7ff; /* 背景色 */
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+/* アイコンホバー時のエフェクト */
+.diary-timeline-element .vertical-timeline-element-icon:hover {
+  transform: scale(1.1);
+  background: #0077cc; /* アクセントカラー */
+}
+
+/* コンテンツのスタイル */
+.diary-timeline-element .vertical-timeline-element-content {
+  background: #e6f7ff; /* 背景色 */
+  color: #333333; /* テキストカラー */
+  border-radius: 8px;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  text-align: center; /* 中央揃え */
+}
+
+/* コンテンツホバー時のエフェクト */
+.diary-timeline-element .vertical-timeline-element-content:hover {
+  box-shadow: 0 4px 20px rgba(0, 170, 255, 0.2);
+  transform: translateY(-5px);
+}
+
+/* コンテンツ矢印のスタイル */
+.diary-timeline-element .vertical-timeline-element-content::before {
+  border-right: 7px solid #e6f7ff; /* 背景色 */
+}
+
+/* タイムライン全体のスタイル調整 */
+.vertical-timeline::before {
+  background: #00aaff; /* タイムラインラインの色をメインカラーに変更 */
+}
+
+/* date と icon の間隔を広げる */
+.diary-timeline-element .vertical-timeline-element-date {
+  margin-bottom: 10px; /* デフォルトより大きめのマージン */
+  font-size: 1rem;
+  color: #00aaff; /* メインカラー */
+  display: block;
+  text-align: center; /* 中央揃え */
+}
+
+.diary-timeline-element .vertical-timeline-element-icon {
+  margin: 0 auto; /* 中央揃え */
+}
+
+/* タイムライン要素全体を中央揃えにする */
+.diary-timeline-element {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* 中央揃え */
+  position: relative; /* 位置調整のため */
+}
+
+/* ダークモードのスタイル */
+body.dark-mode {
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+body.dark-mode .container {
+  background-color: #1e1e1e;
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.1);
+}
+
+body.dark-mode h1 {
+  color: #00aaff;
+}
+
+body.dark-mode .diary-timeline-element .vertical-timeline-element-icon {
+  background: #005fa3; /* ダークモード用アクセントカラー */
+  box-shadow: 0 0 0 4px #003f7a;
+}
+
+body.dark-mode .diary-timeline-element .vertical-timeline-element-content {
+  background: #2c3e50;
+  color: #e0e0e0;
+}
+
+body.dark-mode .diary-timeline-element .vertical-timeline-element-content::before {
+  border-right: 7px solid #2c3e50;
+}
+
+/* レスポンシブ対応 */
+@media (max-width: 768px) {
+  .container {
+    padding: 10px;
+  }
+
+  .diary-timeline-element .vertical-timeline-element-title {
+    font-size: 1.1rem;
+  }
+
+  .diary-timeline-element p {
+    font-size: 0.95rem;
+  }
+
+  .diary-timeline-element .vertical-timeline-element-date {
+    font-size: 0.9rem;
+  }
+}
+
+/* ダークモードトグルボタンのスタイル */
+.dark-mode-toggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: #00aaff;
+  color: #ffffff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  font-family: 'Roboto', sans-serif;
+}
+
+.dark-mode-toggle:hover {
+  background: #0077cc;
+}

@@ -1,0 +1,171 @@
+/* グローバルリセット */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa; /* 背景色をライトグレー */
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  /* コンテナスタイル */
+  .container {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #e5e5e5; /* 全体の背景色 */
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* 見出しスタイル */
+  h1 {
+    font-size: 2rem;
+    text-align: center;
+    color: #007bff; /* アクセントカラー */
+    margin-bottom: 20px;
+  }
+  
+  /* TimeInputコンポーネント用スタイル */
+  label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  input[type='text'],
+  input[type='time'] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  input:focus {
+    outline: none;
+    border-color: #007bff; /* フォーカス時の青色 */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  }
+  
+  /* キャラクタードロップダウン */
+  .dropdown {
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .dropdown-toggle {
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  .dropdown-item {
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  .dropdown-item:hover {
+    background-color: #e3f2fd; /* ホバー時の淡い青 */
+  }
+  
+  /* ボタンスタイル */
+  button {
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button.btn-primary {
+    background-color: #007bff;
+  }
+  
+  button.btn-primary:hover {
+    background-color: #0056b3;
+  }
+  
+  button.btn-success {
+    background-color: #28a745;
+  }
+  
+  button.btn-success:hover {
+    background-color: #218838;
+  }
+  
+  button.btn-secondary {
+    background-color: #6c757d;
+  }
+  
+  button.btn-secondary:hover {
+    background-color: #5a6268;
+  }
+  
+  button + button {
+    margin-left: 10px; /* ボタン間の間隔を調整 */
+  }
+  
+  /* チャットコンテナ */
+  .chat-container {
+    height: 400px;
+    overflow-y: auto;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  }
+  
+  .message {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 10px;
+  }
+  
+  .message img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
+  
+  .message div {
+    max-width: 70%;
+    padding: 10px 15px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    line-height: 1.4;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  }
+  
+  .message .user {
+    justify-content: flex-end;
+  }
+  
+  .message .ai {
+    justify-content: flex-start;
+  }
+  
+  .message div.user {
+    background-color: #dcf8c6; /* ユーザー側のメッセージ背景色 */
+  }
+  
+  .message div.ai {
+    background-color: #f1f1f1; /* AI側のメッセージ背景色 */
+  }
+  

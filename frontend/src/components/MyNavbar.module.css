@@ -1,0 +1,52 @@
+/* src/components/MyNavbar.module.css */
+
+.navbarContainer {
+    background-color: #FFFFFF; /* 背景色を純白に */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* 軽いシャドウ */
+  }
+  
+  .toggleButton {
+    background-color: transparent;
+    border: none;
+    color: #0A0A0A; /* テキスト色を濃いブラックに */
+    font-size: 1.5rem;
+  }
+  
+  .toggleButton:hover {
+    color: #00BCD4; /* アクセント色に変更 */
+  }
+  
+  .offcanvasMenu {
+    background-color: #F9F9F9; /* 非常に淡いグレー */
+    color: #0A0A0A; /* テキスト色を濃いブラックに */
+  }
+  
+  .offcanvasHeader {
+    border-bottom: 1px solid #ECEFF1; /* セパレーター */
+  }
+  
+  .offcanvasTitle {
+    color: #0A0A0A; /* タイトルのテキスト色 */
+  }
+  
+  .navLink {
+    color: #0A0A0A; /* リンクのテキスト色 */
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+  }
+  
+  .navLink:hover {
+    color: #00BCD4; /* アクセント色に変更 */
+  }
+  
+  .logoutButton {
+    color: #C62828; /* ログアウトを強調する色 */
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  .logoutButton:hover {
+    color: #FF5252; /* 濃い赤に変更 */
+  }
+  

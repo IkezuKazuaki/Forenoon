@@ -1,0 +1,35 @@
+/* src/features/tategram/CreatePost.css */
+.create-post {
+  width: 200px;            /* PostCard と同じ幅に揃える (任意) */
+  height: 500px;           /* PostCard と同じ高さに揃える */
+  border: 1px solid #ccc;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  background-color: #fdfdfd;
+  padding: 8px;
+  gap: 8px;
+  margin-right: 30px;
+}
+
+/* テキストエリア周りをスクロールできるようにする */
+.textarea-container {
+  flex: 1 1 auto;
+  overflow-y: auto;         /* 入力が多い場合にスクロール */
+  display: flex;            /* テキストエリアを縦方向に伸ばすため */
+}
+
+/* テキストエリア自体を縦書きに */
+.vertical-textarea {
+  writing-mode: vertical-rl;  /* 右→左の縦書き */
+  text-orientation: upright;
+  line-height: 1.8;
+  white-space: pre-wrap;
+  resize: none;               /* リサイズ禁止 (任意) */
+
+  flex: 1 1 auto;             /* 親要素内で自動拡張 */
+  border: none;               /* 枠線は親要素で管理 */
+  outline: none;
+  background: transparent;    /* 背景も親要素に合わせる */
+  font: inherit;              /* 全体のフォントを継承 */
+}

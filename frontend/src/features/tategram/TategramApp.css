@@ -1,0 +1,26 @@
+/* src/features/tategram/TategramApp.css */
+
+.tategram-container {
+  /* 横並び + 右から左に要素が並ぶ */
+  display: flex;
+  flex-direction: row-reverse; 
+  gap: 20px;               /* 要素間の隙間 */
+  align-items: flex-start; /* 上揃え (必要に応じて調整) */
+  margin-top: 200px;
+  margin-left: 20px;
+
+  /* 横幅が足りなくなった場合に横スクロールにする例 */
+  /* overflow-x: auto; */
+  /* max-width: 100%; */
+    /* 横方向が画面に入りきらない場合にスクロールバーを出す */
+    max-width: 100%;
+    overflow-x: auto;
+    /* 必要であれば縦方向スクロールをさせないようにする (任意)
+    overflow-y: hidden;
+    */
+}
+
+.tategram-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}

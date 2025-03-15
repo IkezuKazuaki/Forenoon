@@ -1,0 +1,4 @@
+# pack-refs with: peeled fully-peeled sorted 
+48d66861b72ccbe2a49a578032fa8f281af3e45f refs/heads/cline-example
+ece3526667f64e11a249e4ff98a1b754df1e4203 refs/heads/master
+7a83b964041b61171907bb46c78f381f9f4ed71d refs/heads/production

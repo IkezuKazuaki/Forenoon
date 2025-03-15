@@ -1,0 +1,140 @@
+/* src/components/LandingPage.module.css */
+
+.landingContainer {
+  font-family: 'Helvetica Neue', sans-serif;
+  background-color: #F9F9F9; /* 背景: 非常に淡いグレー */
+  color: #0A0A0A; /* テキスト: 濃いブラック */
+  padding: 0;
+  margin: 0;
+}
+
+.landingNavbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border-bottom: 1px solid #ECEFF1; /* セカンダリ背景に合わせたボーダー色 */
+  background-color: #F9F9F9; /* ナビゲーションバーの背景 */
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #00BCD4; /* アクセント色: サイアンブルー */
+  text-decoration: none;
+}
+
+.navLinks a {
+  margin-left: 15px;
+}
+
+.landingHeader {
+  text-align: center;
+  padding: 80px 20px;
+  background-color: #ECEFF1; /* セカンダリ背景: 薄いグレー */
+}
+
+.landingHeader h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #0A0A0A; /* テキスト色: 濃いブラック */
+}
+
+.landingHeader p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  color: #333333; /* サブテキスト色 */
+}
+
+.ctaButton {
+  font-size: 1.2rem;
+  padding: 15px 30px;
+  border-radius: 5px;
+  background-color: #00BCD4; /* アクセント色 */
+  border: none;
+  color: #FFFFFF; /* ボタンテキストを白に */
+  transition: background-color 0.3s ease;
+}
+
+.ctaButton:hover {
+  background-color: #008C9E; /* アクセント色の濃いバージョン */
+}
+
+.featuresSection {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 60px 20px;
+  background-color: #F9F9F9; /* 背景を非常に淡いグレーに */
+}
+
+.feature {
+  text-align: center;
+  max-width: 250px;
+}
+
+.feature i {
+  font-size: 3rem;
+  color: #00BCD4; /* アクセント色 */
+  margin-bottom: 15px;
+}
+
+.feature h2 {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+  color: #0A0A0A; /* テキスト色: 濃いブラック */
+}
+
+.feature p {
+  font-size: 1rem;
+  color: #333333; /* サブテキスト色 */
+}
+
+.landingFooter {
+  text-align: center;
+  padding: 20px;
+  background-color: #ECEFF1; /* セカンダリ背景: 薄いグレー */
+  color: #0A0A0A; /* フッターのテキスト色を濃いブラックに */
+  font-size: 0.9rem;
+}
+
+/* ボタンスタイルの調整 */
+.customButton {
+  background-color: #00BCD4; /* アクセント色 */
+  border: none;
+  color: #FFFFFF; /* 白い文字 */
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.customButton:hover {
+  background-color: #008C9E; /* アクセント色の濃いバージョン */
+}
+
+.customButtonOutline {
+  background-color: transparent;
+  border: 2px solid #00BCD4; /* アクセント色のボーダー */
+  color: #00BCD4; /* アクセント色 */
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.customButtonOutline:hover {
+  background-color: #00BCD4; /* アクセント色 */
+  color: #FFFFFF; /* 白い文字 */
+}
+
+.customButton,
+.customButtonOutline {
+  text-decoration: none; /* アンダーラインを無効化 */
+  display: inline-block; /* ボタンのような見た目にするためにブロック化 */
+}
+
+.customButton:hover,
+.customButtonOutline:hover {
+  text-decoration: none; /* ホバー時もアンダーラインを無効化 */
+}

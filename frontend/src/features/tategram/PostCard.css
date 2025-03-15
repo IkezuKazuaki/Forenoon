@@ -1,0 +1,35 @@
+/* src/features/tategram/PostCard.css */
+.post-card {
+  height: 500px;
+  border: 1px solid #ccc;
+  display: flex;              /* フレックスボックスに */
+  flex-direction: column;     /* 縦方向に配置 */
+  justify-content: flex-end;  /* ★ 子要素を下寄せ */
+  flex-direction: column;
+  background-color: #fdfdfd;
+  box-sizing: border-box;
+  margin-bottom: 16px;
+}
+
+.post-content {
+  flex: 1 1 auto;      /* テキスト領域を伸縮させる */
+  overflow-y: auto;    /* 溢れたらスクロール */
+  padding: 8px;
+}
+
+/* 縦書き＋右詰め */
+.vertical-text {
+  writing-mode: vertical-rl;  /* 右→左の縦書き */
+  text-orientation: upright;
+  white-space: pre-wrap;      /* 改行を反映 */
+  line-height: 1.8;
+  margin: 0;
+}
+
+.user-info {
+  text-align: center;
+  font-size: 0.8rem;
+  color: #666;
+  padding: 4px 8px;
+  border-top: 1px solid #ccc;
+}
