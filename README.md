@@ -1,7 +1,3 @@
-# Forenoon
-
-![Forenoon Logo](https://via.placeholder.com/150)
-
 ## 概要 | Overview
 
 Forenoonは、ユーザーの日常生活をサポートするための多機能Webアプリケーションです。タスク管理、日記記録、睡眠スケジュール管理、AIアシスタントとの対話、時間割管理などの機能を統合し、ユーザーの生産性向上と健康的な生活習慣の確立を支援します。
@@ -199,22 +195,3 @@ REACT_APP_API_BASE_URL=http://localhost:8000
   - `POST /api/timetable/classes/`: 授業作成
   - `GET /api/timetable/classes/by_day/`: 曜日別授業取得
 
-## 貢献 | Contributing
-
-1. このリポジトリをフォークする
-2. 機能ブランチを作成する (`git checkout -b feature/amazing-feature`)
-3. 変更をコミットする (`git commit -m 'Add some amazing feature'`)
-4. ブランチにプッシュする (`git push origin feature/amazing-feature`)
-5. プルリクエストを作成する
-
-## ライセンス | License
-
-このプロジェクトは [MIT License](LICENSE) の下でライセンスされています。
-
-## 連絡先 | Contact
-
-プロジェクト管理者: [your-email@example.com](mailto:your-email@example.com)
-
----
-
-© 2025 Forenoon Team
