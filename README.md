@@ -1,8 +1,6 @@
 ## 概要 | Overview
 
-Forenoonは、ユーザーの日常生活をサポートするための多機能Webアプリケーションです。タスク管理、日記記録、睡眠スケジュール管理、AIアシスタントとの対話、時間割管理などの機能を統合し、ユーザーの生産性向上と健康的な生活習慣の確立を支援します。
-
-Forenoon is a multifunctional web application designed to support users' daily lives. It integrates task management, diary recording, sleep schedule management, AI assistant interaction, timetable management, and more to help users improve productivity and establish healthy lifestyle habits.
+Forenoonは、ユーザーの日常生活をサポートするための多機能Webアプリケーションです。タスク管理、日記記録、睡眠スケジュール管理、時間割管理などの機能を統合し、ユーザーの生産性向上と健康的な生活習慣の確立を支援します。
 
 ## 機能 | Features
 
@@ -29,7 +27,7 @@ Forenoon is a multifunctional web application designed to support users' daily l
 - **時間割管理** | **Timetable Management**
   - 曜日と時限ごとの授業スケジュール管理
   - 科目、教室、教員情報の記録
-  - 曜日別の時間割表示
+  - 画像から時間割の自動読み取り
 
 ## 技術スタック | Technology Stack
 
